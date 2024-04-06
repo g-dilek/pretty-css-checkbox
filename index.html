@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Pretty checkbox</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <!-- Checkbox input tags CANNOT be styled on their own. But we CAN style label tags. So, we use the label tag below to act as a container for our checkboxes. -->
+
+    <!-- The label tag will contain both the hidden checkbox (makes the checkbox work) and the visible 'checkbox' (which is really just a styled span tag sitting on top of the original checkbox. -->
+    <label class="form__label">
+      <input type="checkbox" class="form__checkbox-hidden" />
+      <!-- Our span tag, pretending to be a checkbox. -->
+      <span class="form__checkbox-visible"></span> I agree to the terms of use
+    </label>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* This makes the whole label clickable, including the text next to the checkbox. */
+.form__label {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* This makes the standard checkbox invisible in a variety of browsers.  */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* This weird classes below are needed because the visible 'checkbox' (span tag) relies on checking the hidden checkbox's state (checked or unchecked) to determine what it displays. */
+
+/* Checked checkbox (gets image overlay) */
+.form__label input:checked ~ .form__checkbox-visible {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background: #2f80ed url(../images/check.svg) no-repeat center;
+}
+
+/* Unchecked 'checkbox' (actually the 'span' tag within our label) */
+input[type="checkbox"] + span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #2f80ed;
+  border-radius: 50%;
+}

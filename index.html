@@ -8,13 +8,18 @@
   </head>
 
   <body>
-    <!-- Checkbox input tags CANNOT be styled on their own. But we CAN style label tags. So, we use the label tag below to act as a container for our checkboxes. -->
+    <!-- Checkbox input tags CANNOT be styled on their own. But we CAN style label tags. So, we use the label tag below to act as a container for our checkboxes. Then, we apply styles to the label tag. -->
 
-    <!-- The label tag will contain both the hidden checkbox (makes the checkbox work) and the visible 'checkbox' (which is really just a styled span tag sitting on top of the original checkbox. -->
     <label class="form__label">
+      <!-- The label tag will contain both the hidden checkbox (makes the checkbox work) and the visible 'checkbox' (which is really just a styled span tag sitting on top of the original checkbox. -->
+
       <input type="checkbox" class="form__checkbox-hidden" />
-      <!-- Our span tag, pretending to be a checkbox. -->
+
+      <!-- Below is the span tag, pretending to be a checkbox. It doesn't need to have anything in it. The text after the closed span tag will be what's next to the checkbox. -->
+
       <span class="form__checkbox-visible"></span> I agree to the terms of use
+
+      <!-- Don't forget to close your label tag! -->
     </label>
   </body>
 </html>

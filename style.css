@@ -24,7 +24,7 @@ input[type="checkbox"] {
   width: 0;
 }
 
-/* This weird classes below are needed because the visible 'checkbox' (span tag) relies on checking the hidden checkbox's state (checked or unchecked) to determine what it displays. */
+/* The weird classes below are needed because the visible 'checkbox' (span tag) relies on checking the hidden checkbox's state (checked or unchecked) to determine what it displays. */
 
 /* Checked checkbox (gets image overlay) */
 .form__label input:checked ~ .form__checkbox-visible {
@@ -33,7 +33,7 @@ input[type="checkbox"] {
   left: 0;
   height: 25px;
   width: 25px;
-  background: #2f80ed url(../images/check.svg) no-repeat center;
+  background: #2f80ed url(../images/check.png) no-repeat center;
 }
 
 /* Unchecked 'checkbox' (actually the 'span' tag within our label) */

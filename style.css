@@ -33,7 +33,7 @@ input[type="checkbox"] {
   left: 0;
   height: 25px;
   width: 25px;
-  background: #2f80ed url(../images/check.png) no-repeat center;
+  background: #2f80ed url(./images/check.png) no-repeat center;
 }
 
 /* Unchecked 'checkbox' (actually the 'span' tag within our label) */
